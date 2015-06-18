@@ -66,6 +66,8 @@ class CommandRunner
         output += data.toString()
 
       proc.on 'exit', (code, signal) =>
+        clearTimeout(@timeout) if @timeout?
+
         output += "\nTerminated by " + signal + "\n" if signal?
 
         @running = false
