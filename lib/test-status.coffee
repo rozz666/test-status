@@ -6,6 +6,12 @@ module.exports =
       type: 'boolean'
       default: true
 
+    timeoutInSeconds:
+      type: 'integer'
+      default: 60
+      minimum: 1
+      description: 'Test jobs will be terminated if they run longer than this'
+
   # Public: Active the package and initialize the test-status views.
   #
   # Returns nothing.
