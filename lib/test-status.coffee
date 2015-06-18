@@ -8,7 +8,7 @@ module.exports =
 
     timeoutInSeconds:
       type: 'integer'
-      default: 5
+      default: 60
       minimum: 1
       description: 'Test jobs will be terminated if they run longer than this'
 
