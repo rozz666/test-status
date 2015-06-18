@@ -79,10 +79,12 @@ class CommandRunner
           testStatus.removeClass('pending success').addClass('fail')
 
       clearTimeout(@timeout) if @timeout?
+      timeoutInSeconds = atom.config.get('test-status.timeoutInSeconds')
+      timeoutInMs = timeoutInSeconds * 1000
       @timeout = setTimeout ->
-        output += "\n\nERROR: Timed out after 1s\n"
+        output += "\n\nERROR: Timed out after " + timeoutInSeconds + "s\n"
         proc.kill()
-      , 1000
+      , timeoutInMs
     catch err
       @running = false
       testStatus.removeClass('pending success').addClass('fail')
