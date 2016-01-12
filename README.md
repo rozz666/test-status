@@ -2,9 +2,9 @@
 
 View the status of your projects test suite in the status bar of Atom.
 
-**Please note:** I am no longer using Atom, this means I won't be actively
-maintaining this project. I will still accept pull requests for bug fixes and
-such.
+**I am looking for a maintainer to take over the travis-ci-status project,
+please contact me on Twitter [@thetombell](https://twitter.com/thetombell) if
+you're interested.**
 
 ## Installation
 
