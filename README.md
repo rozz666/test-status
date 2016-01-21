@@ -2,7 +2,7 @@
 
 View the status of your projects test suite in the status bar of Atom.
 
-**I am looking for a maintainer to take over the travis-ci-status project,
+**I am looking for a maintainer to take over the test-status project,
 please contact me on Twitter [@thetombell](https://twitter.com/thetombell) if
 you're interested.**
 
